@@ -56,8 +56,6 @@ test('surplus number of speakers in json handled properly', () => {
 
   fs.unlink(HTML, (err) => {}); // ignore if deletion failed.
 
-  const ORIG_JSON = transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_json_filename
-  const ORIG_HTML = transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_html_filename
   transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_json_filename = jest.fn( () => JSON)
   transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_html_filename = jest.fn( () => HTML)
   j2h = new transcriptionJsonToHtml.TranscriptionJsonToHtml(
@@ -115,8 +113,6 @@ test('surplus number of speakers on command line handled properly', () => {
 
   const speakers = ['Darwin Grosse', 'Barry Moon', 'John Doe', 'Jane Doe'] 
 
-  const ORIG_JSON = transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_json_filename
-  const ORIG_HTML = transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_html_filename
   transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_json_filename = jest.fn( () => JSON)
   transcriptionJsonToHtml.TranscriptionJsonToHtml.prototype.normalize_html_filename = jest.fn( () => HTML)
   j2h = new transcriptionJsonToHtml.TranscriptionJsonToHtml(
