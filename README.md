@@ -9,7 +9,7 @@ All files are copyright 2019 by Darwin Grosse. All right reserved.
 
 # AMT-Transcripts Transcription App
 
-Transcriptions for the AMT Podcast are completed using the [https://rev.ai](https://rev.ai) service, which produces a JSON file with timestamp, punctuation, spacing and timing for every word in the transcribed document. But like all auto-transcribing tools, it misses a lot of stuff. For example, MIDI is often transcribed as "mini", or "Mitty" or even "Mindy". So it still have to be cleaned up manually.
+Transcriptions for the AMT Podcast are completed using the [https://rev.ai](https://rev.ai) service, which produces a JSON file with timestamp, punctuation, spacing and timing for every word in the transcribed document. But like all auto-transcribing tools, it misses a lot of stuff. For example, MIDI is often transcribed as "mini", or "Mitty" or even "Mindy". So it still has to be cleaned up manually.
 
 The tr-parse application runs through the JSON document, ID's poorly transcribed words, labels the speaker, formats things into manageable HTML paragraphs, and installs some boilerplate around the HTML. It also, optionally, can create a document that provides direct access to the audio file for verification of the words (which is proving to be a great timesaver, [see it in action](https://www.youtube.com/watch?v=wmmE7uT9KF0)).
 
