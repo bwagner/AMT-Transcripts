@@ -20,7 +20,7 @@
     "glob": "^7.1.6"
   },
   "devDependencies": {
-    "jest": "^24.9.0",
+    "jest": "^30.5.2",
     "shellwords": "^0.1.1"
   }
 }
